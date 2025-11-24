@@ -83,7 +83,7 @@ module "redis" {
 ################################################################################
 
 module "vpc" {
-  source = "../../../terraform-huawei-vpc"
+  source = "github.com/artifactsystems/terraform-huawei-vpc?ref=v1.0.0"
 
   name = local.name
   cidr = local.vpc_cidr
