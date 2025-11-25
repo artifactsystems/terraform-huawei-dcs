@@ -5,7 +5,7 @@ provider "huaweicloud" {
 data "huaweicloud_availability_zones" "available" {}
 
 locals {
-  name   = "redis-ha-backup"
+  name   = "ex-${basename(path.cwd)}"
   region = "tr-west-1"
 
   vpc_cidr = "10.0.0.0/16"
@@ -13,7 +13,9 @@ locals {
 
   tags = {
     Name    = local.name
-    Example = "ha-with-backup"
+    Example = local.name
+    GithubRepo = "terraform-huawei-dcs"
+    GithubOrg  = "artifactsystems"
   }
 }
 
