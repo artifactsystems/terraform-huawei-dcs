@@ -12,8 +12,8 @@ locals {
   azs      = slice(data.huaweicloud_availability_zones.available.names, 0, 1)
 
   tags = {
-    Name    = local.name
-    Example = local.name
+    Name       = local.name
+    Example    = local.name
     GithubRepo = "terraform-huawei-dcs"
     GithubOrg  = "artifactsystems"
   }

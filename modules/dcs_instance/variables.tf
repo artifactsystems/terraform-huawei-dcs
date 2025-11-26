@@ -16,12 +16,6 @@ variable "use_name_prefix" {
   default     = false
 }
 
-variable "name_prefix" {
-  description = "The name prefix for the DCS instance"
-  type        = string
-  default     = null
-}
-
 variable "engine" {
   description = "Cache engine (Redis or Memcached)"
   type        = string

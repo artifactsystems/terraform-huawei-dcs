@@ -17,9 +17,9 @@ module "dcs_instance" {
   count  = local.create_dcs_instance ? 1 : 0
   source = "./modules/dcs_instance"
 
+  region             = var.region
   name               = local.instance_name
   use_name_prefix    = var.use_identifier_prefix
-  name_prefix        = var.use_identifier_prefix ? var.identifier : null
   engine             = var.engine
   engine_version     = var.engine_version
   capacity           = var.capacity

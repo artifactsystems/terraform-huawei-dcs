@@ -54,4 +54,3 @@ module "dcs" {
 
 - Resource: [`huaweicloud_dcs_instance`](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/dcs_instance)
 - Examples: `examples/simple`, `examples/ha-with-backup`
-
