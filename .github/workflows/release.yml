@@ -35,7 +35,7 @@ jobs:
             conventional-changelog-conventionalcommits@9.1.0
 
       - name: Release
-        uses: cycjimmy/semantic-release-action@v5
+        uses: cycjimmy/semantic-release-action@v6
         with:
           semantic_version: 25.0.0
         env:
